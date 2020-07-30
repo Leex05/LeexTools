@@ -1,15 +1,10 @@
 # LeexTools
-
-[![CI Status](https://img.shields.io/travis/978608151@qq.com/LeexTools.svg?style=flat)](https://travis-ci.org/978608151@qq.com/LeexTools)
-[![Version](https://img.shields.io/cocoapods/v/LeexTools.svg?style=flat)](https://cocoapods.org/pods/LeexTools)
-[![License](https://img.shields.io/cocoapods/l/LeexTools.svg?style=flat)](https://cocoapods.org/pods/LeexTools)
-[![Platform](https://img.shields.io/cocoapods/p/LeexTools.svg?style=flat)](https://cocoapods.org/pods/LeexTools)
+初始化项目实用工具，可缓存网络请求
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
 ## Installation
 
@@ -19,11 +14,28 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'LeexTools'
 ```
+## LXNetWork
+无缓存请求
++ (__kindof NSURLSessionTask *)GET:(NSString *)URL
+parameters:(id)parameters
+   headers:(id)headers
+   success:(LXHttpRequestSuccess)success
+   failure:(LXHttpRequestFailed)failure;
+   
+缓存请求
++ (__kindof NSURLSessionTask *)GET:(NSString *)URL
+   parameters:(id)parameters
+      headers:(id)headers
+responseCache:(LXHttpRequestCache)responseCache
+      success:(LXHttpRequestSuccess)success
+      failure:(LXHttpRequestFailed)failure;
 
 ## Author
 
-978608151@qq.com, ttgg1140@163.com
+leex, leex_ios@163.com
 
 ## License
 
-LeexTools is available under the MIT license. See the LICENSE file for more info.
+感谢支持
+BTC：3DUGBKHbNn7RhEkeFZvLYCd2ijXKncGhMJ
+ETH：0x71436d6e4F5EA69dCe337D51aF9fB159EFCCF84B

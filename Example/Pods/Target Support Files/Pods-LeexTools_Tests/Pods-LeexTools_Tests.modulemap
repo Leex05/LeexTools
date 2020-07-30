@@ -1,0 +1,6 @@
+framework module Pods_LeexTools_Tests {
+  umbrella header "Pods-LeexTools_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
